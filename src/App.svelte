@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { t, i18nState, setI18n } from '@i18n-pro/svelte'
-  import { onDestroy, onMount } from 'svelte'
+  import {useI18n} from '@i18n-pro/svelte/context'
+  import {onDestroy, onMount} from 'svelte'
 
   const bestProgramLang = ['JavaScript', 'Java', 'C', 'C++', 'Python', 'PHP'][
     Math.round(Math.random() * 5)
@@ -15,6 +15,8 @@
   let show = false
   let loading = false
   let timer
+
+  const {t, setI18n, i18nState} = useI18n()
 
   async function resolveI18n(localeProp?: string) {
     let locale = undefined
@@ -52,7 +54,7 @@
   function onSelectChange(e) {
     const locale = e.target.value
     if ($i18nState?.langs?.[locale] || locale == 'zh') {
-      setI18n({ locale })
+      setI18n({locale})
     } else {
       resolveI18n(locale)
     }

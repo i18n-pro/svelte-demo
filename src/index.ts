@@ -1,8 +1,5 @@
-import './i18n'
-import App from './App.svelte'
+import Root from './Root.svelte'
 
-const app = new App({
+new Root({
   target: document.getElementById('app'),
 })
-
-export default app
