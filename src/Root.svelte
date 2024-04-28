@@ -4,4 +4,6 @@
   import i18nState from './i18n'
 </script>
 
-<I18nProvider {...i18nState}><App /></I18nProvider>
+<I18nProvider {...i18nState}>
+  <App />
+</I18nProvider>
