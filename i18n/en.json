@@ -1,4 +1,5 @@
 {
+  "motto": "Talk is cheap. Show me the code",
   "基础示例": "Basic Example",
   "简单的一段描述": "A brief description",
   "{0}是世界上最好的语言？我不信": "Is {0} the best language in the world? I don't believe it",
@@ -12,9 +13,10 @@
   "格式化复数": "Format Plural",
   "我有{p0个苹果}": "I have {P0 apples}",
   "格式化时间": "Format Time:",
+  "千万": "must",
   "当前时间：{t0}": "Current time: {t0}",
-  "千万": "Tens of millions",
-  "年": "Year",
-  "月": "moon",
-  "日": "day"
+  "年": "year",
+  "月": "month",
+  "日": "day",
+  "自定义 key": "Custom Key"
 }

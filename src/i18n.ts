@@ -1,7 +1,12 @@
-import { createI18n } from '@i18n-pro/svelte'
+import { I18nState } from '@i18n-pro/svelte'
 
-createI18n( {
+const initI18nState:I18nState = {
   namespace: 'testNamespace',
+  langs: {
+    en: () => import('../i18n/en.json').then((res) => res.default),
+    cht: () => import('../i18n/cht.json').then((res) => res.default),
+    jp: () => import('../i18n/jp.json').then((res) => res.default),
+  },
   formatNumber({ locale, payload, t }) {
     let res = payload as string
     switch (locale) {
@@ -113,4 +118,6 @@ createI18n( {
 
     return res
   },
-})
+} 
+
+export default initI18nState
