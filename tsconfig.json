@@ -2,7 +2,8 @@
   "compilerOptions": {
     "module": "ESNext",
     "moduleResolution": "Node",
-    "allowJs": true
+    "allowJs": true,
+    "resolveJsonModule": true
   },
   "include": [
     "src/"
