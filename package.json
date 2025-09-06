@@ -19,8 +19,8 @@
     "vite": "^4.4.5"
   },
   "dependencies": {
-    "@i18n-pro/svelte": "2.0.0-alpha.0",
-    "i18n-pro": "3.0.0-alpha.2",
+    "@i18n-pro/svelte": "2.0.0",
+    "i18n-pro": "3.0.0",
     "svelte": "^4.0.5"
   }
 }
